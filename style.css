@@ -1,0 +1,155 @@
+:root{
+--blue:#26466d;
+--gold:#7e6036;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html,body{
+width:100%;
+height:100%;
+overflow:hidden;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+
+    background-image:
+/*     linear-gradient(
+        rgba(0,0,0,.15),
+        rgba(0,0,0,.25)
+    ), */
+    url("./assets/background.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.overlay{
+display:none;
+}
+
+.content{
+position:relative;
+width:100%;
+height:100vh;
+}
+
+.social-grid{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    align-items: flex-end;
+}
+
+
+.social{
+    width: 90px;
+    height: 90px;
+
+    border-radius: 22px 0 0 22px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+text-decoration:none;
+
+background:linear-gradient(
+    145deg,
+    rgba(38,70,109,.95),
+    rgba(15,25,45,.95)
+);
+
+border:1px solid rgba(126,96,54,.45);
+
+box-shadow:
+    inset 0 1px 1px rgba(255,255,255,.12),
+    0 10px 25px rgba(0,0,0,.35);
+
+transition:.3s ease;
+```
+
+}
+
+.social:hover{
+transform:scale(1.08);
+
+```
+box-shadow:
+    0 0 20px rgba(126,96,54,.9),
+    0 0 40px rgba(38,70,109,.8);
+```
+
+}
+
+.social i{
+font-size:34px;
+}
+
+
+
+.whatsapp i{
+color:#25D366;
+}
+
+.phone i{
+color:var(--gold);
+}
+
+.facebook i{
+color:#1877F2;
+}
+
+.instagram i{
+color:#E1306C;
+}
+
+.github i{
+color:#000000;
+}
+/* Small phones */
+@media (max-width:430px){
+
+```
+.social-grid{
+    right:12px;
+    top:16%;
+}
+
+.social{
+    width:64px;
+    height:64px;
+}
+
+
+.social i{
+    font-size:30px;
+}
+```
+
+}
+
+/* Large phones */
+@media (min-width:431px){
+
+```
+.social-grid{
+    right:22px;
+    top:18%;
+}
+```
+
+}
